@@ -1,0 +1,10 @@
+{
+  "name": "PulseFit MAX",
+  "short_name": "PulseFit",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F5F7F4",
+  "theme_color": "#101A18",
+  "description": "PulseFit MAX - Signature Performance OS",
+  "orientation": "portrait-primary"
+}

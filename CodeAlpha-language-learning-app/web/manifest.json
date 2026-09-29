@@ -1,0 +1,11 @@
+{
+  "name": "Lingua Signature",
+  "short_name": "Lingua",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F7F8F4",
+  "theme_color": "#5B55E7",
+  "description": "A polished offline-first language learning app.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}

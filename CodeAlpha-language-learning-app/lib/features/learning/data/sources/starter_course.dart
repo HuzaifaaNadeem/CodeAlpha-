@@ -1,0 +1,343 @@
+import 'package:flutter/material.dart';
+
+import '../../domain/entities/learning_item.dart';
+import '../../domain/entities/lesson.dart';
+
+class StarterCourse {
+  static const languageName = 'Spanish';
+  static const languageCode = 'ES';
+
+  static const lessons = <Lesson>[
+    Lesson(
+      id: 'greetings',
+      title: 'First hellos',
+      subtitle: 'Greetings & introductions',
+      emoji: '👋',
+      colorValue: 0xFFE8E7FF,
+      items: [
+        LearningItem(
+            id: 'hello',
+            source: 'Hello',
+            target: 'Hola',
+            pronunciation: 'OH-lah',
+            example: 'Hola, ¿cómo estás?',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'good_morning',
+            source: 'Good morning',
+            target: 'Buenos días',
+            pronunciation: 'BWEH-nos DEE-ahs',
+            example: 'Buenos días, Ana.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'good_evening',
+            source: 'Good evening',
+            target: 'Buenas tardes',
+            pronunciation: 'BWEH-nas TAR-des',
+            example: 'Buenas tardes, señor.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'goodbye',
+            source: 'Goodbye',
+            target: 'Adiós',
+            pronunciation: 'ah-DYOS',
+            example: 'Adiós, hasta mañana.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'please',
+            source: 'Please',
+            target: 'Por favor',
+            pronunciation: 'por fah-VOR',
+            example: 'Agua, por favor.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'thanks',
+            source: 'Thank you',
+            target: 'Gracias',
+            pronunciation: 'GRAH-syahs',
+            example: 'Muchas gracias.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'my_name',
+            source: 'My name is...',
+            target: 'Me llamo...',
+            pronunciation: 'meh YAH-moh',
+            example: 'Me llamo Sofia.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'nice_meet',
+            source: 'Nice to meet you',
+            target: 'Mucho gusto',
+            pronunciation: 'MOO-choh GOOS-toh',
+            example: 'Mucho gusto, Carlos.',
+            kind: LearningItemKind.phrase),
+      ],
+    ),
+    Lesson(
+      id: 'essentials',
+      title: 'Daily essentials',
+      subtitle: 'Useful words for every day',
+      emoji: '✨',
+      colorValue: 0xFFE2F6EA,
+      items: [
+        LearningItem(
+            id: 'yes',
+            source: 'Yes',
+            target: 'Sí',
+            pronunciation: 'see',
+            example: 'Sí, claro.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'no',
+            source: 'No',
+            target: 'No',
+            pronunciation: 'noh',
+            example: 'No, gracias.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'water',
+            source: 'Water',
+            target: 'Agua',
+            pronunciation: 'AH-gwah',
+            example: 'Quiero agua.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'food',
+            source: 'Food',
+            target: 'Comida',
+            pronunciation: 'koh-MEE-dah',
+            example: 'La comida está lista.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'bathroom',
+            source: 'Bathroom',
+            target: 'Baño',
+            pronunciation: 'BAH-nyoh',
+            example: '¿Dónde está el baño?',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'where',
+            source: 'Where?',
+            target: '¿Dónde?',
+            pronunciation: 'DON-deh',
+            example: '¿Dónde está el hotel?',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'how_much',
+            source: 'How much?',
+            target: '¿Cuánto cuesta?',
+            pronunciation: 'KWAN-toh KWES-tah',
+            example: '¿Cuánto cuesta esto?',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'help',
+            source: 'I need help',
+            target: 'Necesito ayuda',
+            pronunciation: 'neh-seh-SEE-toh ah-YOO-dah',
+            example: 'Disculpe, necesito ayuda.',
+            kind: LearningItemKind.phrase),
+      ],
+    ),
+    Lesson(
+      id: 'food',
+      title: 'At the café',
+      subtitle: 'Ordering food & drinks',
+      emoji: '☕',
+      colorValue: 0xFFFFEBC2,
+      items: [
+        LearningItem(
+            id: 'coffee',
+            source: 'Coffee',
+            target: 'Café',
+            pronunciation: 'kah-FEH',
+            example: 'Un café, por favor.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'tea',
+            source: 'Tea',
+            target: 'Té',
+            pronunciation: 'teh',
+            example: 'Quiero té.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'bread',
+            source: 'Bread',
+            target: 'Pan',
+            pronunciation: 'pahn',
+            example: 'Pan con mantequilla.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'menu',
+            source: 'Menu',
+            target: 'Menú',
+            pronunciation: 'meh-NOO',
+            example: 'El menú, por favor.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'bill',
+            source: 'The bill, please',
+            target: 'La cuenta, por favor',
+            pronunciation: 'lah KWEN-tah por fah-VOR',
+            example: 'La cuenta, por favor.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'delicious',
+            source: 'Delicious',
+            target: 'Delicioso',
+            pronunciation: 'deh-lee-SYOH-soh',
+            example: 'Está delicioso.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'want',
+            source: 'I would like...',
+            target: 'Quisiera...',
+            pronunciation: 'kee-SYEH-rah',
+            example: 'Quisiera una ensalada.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'without',
+            source: 'Without sugar',
+            target: 'Sin azúcar',
+            pronunciation: 'seen ah-SOO-kar',
+            example: 'Café sin azúcar.',
+            kind: LearningItemKind.phrase),
+      ],
+    ),
+    Lesson(
+      id: 'travel',
+      title: 'Getting around',
+      subtitle: 'Travel & directions',
+      emoji: '🧭',
+      colorValue: 0xFFDCEEFF,
+      items: [
+        LearningItem(
+            id: 'station',
+            source: 'Station',
+            target: 'Estación',
+            pronunciation: 'es-tah-SYON',
+            example: 'La estación está cerca.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'airport',
+            source: 'Airport',
+            target: 'Aeropuerto',
+            pronunciation: 'ah-eh-roh-PWER-toh',
+            example: 'Voy al aeropuerto.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'left',
+            source: 'Left',
+            target: 'Izquierda',
+            pronunciation: 'ees-KYEHR-dah',
+            example: 'Gira a la izquierda.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'right',
+            source: 'Right',
+            target: 'Derecha',
+            pronunciation: 'deh-REH-chah',
+            example: 'Gira a la derecha.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'straight',
+            source: 'Straight ahead',
+            target: 'Todo recto',
+            pronunciation: 'TOH-doh REHK-toh',
+            example: 'Sigue todo recto.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'ticket',
+            source: 'Ticket',
+            target: 'Billete',
+            pronunciation: 'bee-YEH-teh',
+            example: 'Un billete a Madrid.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'near',
+            source: 'Is it near?',
+            target: '¿Está cerca?',
+            pronunciation: 'es-TAH SEHR-kah',
+            example: '¿Está cerca el museo?',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'lost',
+            source: 'I am lost',
+            target: 'Estoy perdido',
+            pronunciation: 'es-TOY pehr-DEE-doh',
+            example: 'Perdón, estoy perdido.',
+            kind: LearningItemKind.phrase),
+      ],
+    ),
+    Lesson(
+      id: 'conversation',
+      title: 'Small talk',
+      subtitle: 'Simple everyday conversation',
+      emoji: '💬',
+      colorValue: 0xFFFFE1E5,
+      items: [
+        LearningItem(
+            id: 'how_are_you',
+            source: 'How are you?',
+            target: '¿Cómo estás?',
+            pronunciation: 'KOH-moh es-TAHS',
+            example: 'Hola, ¿cómo estás?',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'fine',
+            source: 'I am fine',
+            target: 'Estoy bien',
+            pronunciation: 'es-TOY BYEN',
+            example: 'Estoy bien, gracias.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'from',
+            source: 'Where are you from?',
+            target: '¿De dónde eres?',
+            pronunciation: 'deh DON-deh EH-res',
+            example: '¿De dónde eres tú?',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'pakistan',
+            source: 'I am from Pakistan',
+            target: 'Soy de Pakistán',
+            pronunciation: 'soy deh pah-kees-TAHN',
+            example: 'Soy de Pakistán.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'speak',
+            source: 'Do you speak English?',
+            target: '¿Hablas inglés?',
+            pronunciation: 'AH-blahs een-GLES',
+            example: 'Disculpe, ¿hablas inglés?',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'little',
+            source: 'A little',
+            target: 'Un poco',
+            pronunciation: 'oon POH-koh',
+            example: 'Hablo un poco.',
+            kind: LearningItemKind.phrase),
+        LearningItem(
+            id: 'understand',
+            source: 'I understand',
+            target: 'Entiendo',
+            pronunciation: 'en-TYEN-doh',
+            example: 'Sí, entiendo.',
+            kind: LearningItemKind.vocabulary),
+        LearningItem(
+            id: 'dont_understand',
+            source: "I don't understand",
+            target: 'No entiendo',
+            pronunciation: 'noh en-TYEN-doh',
+            example: 'Lo siento, no entiendo.',
+            kind: LearningItemKind.phrase),
+      ],
+    ),
+  ];
+
+  static List<LearningItem> get allItems => [
+        for (final lesson in lessons) ...lesson.items,
+      ];
+
+  static Color lessonColor(Lesson lesson) => Color(lesson.colorValue);
+}

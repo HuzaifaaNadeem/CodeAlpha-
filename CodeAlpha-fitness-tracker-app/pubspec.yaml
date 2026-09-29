@@ -1,0 +1,24 @@
+name: codealpha_fitness_tracker_app
+description: PulseFit Max - a flagship offline-first fitness, wellness and training tracker built with Flutter and Riverpod.
+publish_to: 'none'
+version: 2.0.0+2
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  shared_preferences: ^2.5.3
+  pedometer: ^4.2.0
+  permission_handler: ^12.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

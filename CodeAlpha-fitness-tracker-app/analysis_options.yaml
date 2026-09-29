@@ -1,0 +1,19 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - .dart_tool/**
+    - android/**
+    - ios/**
+    - linux/**
+    - macos/**
+    - windows/**
+    - web/**
+
+# Keep analyzer output focused on correctness and meaningful maintainability
+# issues; these two micro-optimization lints are intentionally disabled.
+linter:
+  rules:
+    prefer_const_constructors: false
+    prefer_const_declarations: false
